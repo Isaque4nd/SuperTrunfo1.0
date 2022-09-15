@@ -94,11 +94,11 @@ function jogar() {
   var valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
 
   if (valorCartaJogador > valorCartaMaquina) {
-    elementoResultado.innerHTML = `Você venceu`;
+    elementoResultado.innerHTML = `Você venceu!`;
   } else if (valorCartaMaquina > valorCartaJogador) {
-    elementoResultado.innerHTML = `Você perdeu`;
+    elementoResultado.innerHTML = `Você perdeu! O valor do atributo da carta da máquina é maior.`;
   } else {
-    elementoResultado.innerHTML = `Empatou`;
+    elementoResultado.innerHTML = `Empatou! Os atributos têm valores iguais`;
   }
   console.log(cartaMaquina);
 }
