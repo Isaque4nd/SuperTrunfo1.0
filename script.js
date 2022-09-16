@@ -53,13 +53,13 @@ var cartaMaquina;
 var cartaJogador;
 
 function sortearCarta() {
-  var numeroCartaMaquina = parseInt(Math.random() * 3);
+  var numeroCartaMaquina = parseInt(Math.random() * 5);
   cartaMaquina = cartas[numeroCartaMaquina];
 
-  var numeroCartaJogador = parseInt(Math.random() * 3);
+  var numeroCartaJogador = parseInt(Math.random() * 5);
 
   while (numeroCartaMaquina == numeroCartaJogador) {
-    var numeroCartaJogador = parseInt(Math.random() * 3);
+    var numeroCartaJogador = parseInt(Math.random() * 5);
   }
   cartaJogador = cartas[numeroCartaJogador];
 
